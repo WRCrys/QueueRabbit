@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Queue.Worker-4EB45D74-DDB3-4854-A545-A27C9D1DCF3E</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1"/>
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.0"/>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0"/>
+        <PackageReference Include="System.Data.OleDb" Version="6.0.0"/>
+        <PackageReference Include="System.Data.SqlClient" Version="4.8.3"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Queue.Core\Queue.Core.csproj"/>
+        <ProjectReference Include="..\Queue.MessageBus\Queue.MessageBus.csproj"/>
+    </ItemGroup>
+</Project>
